@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idaproject</title>
+    <link rel="stylesheet" href="../dist/style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="add-item">
+        <div class="container">
+            <div class="form__wrapper">
+                <div class="form__title">Добавление товара</div>
+                <form action="#" class="form">
+                    <div class="input__wrapper">
+                        <label>
+                            <div class="input__title input__title_required">Наименование товара </div>
+                            <input name="name" class="input" placeholder="Введите наименование товара" type='text'>
+                            <p class="input__err">Поле является обязательным</p>
+                        </label>
+                    </div>
+                    <div class="input__wrapper">
+                        <label>
+                            <div class="input__title">Описание товара </div>
+                            <textarea name="descrip" class="input input_big" placeholder="Введите описание товара" class="form__description"></textarea>
+                        </label>
+                    </div>
+                    <div class="input__wrapper">
+                        <label>
+                            <div class="input__title input__title_required">Ссылка на изображение товара </div>
+                            <input name="link" class="input" placeholder="Введите ссылку" type='text'>
+                            <p class="input__err">Поле является обязательным</p>
+                        </label>
+                    </div>  
+                    <div class="input__wrapper">
+                        <label>
+                            <div class="input__title input__title_required">Цена товара </div>
+                            <input name="price" class="input" type="number" placeholder="Введите цену">
+                            <p class="input__err">Поле является обязательным</p>
+                        </label>
+                    </div>
+
+                   <button id="add-item" class="form__button">Добавить товар</button>
+                </form>
+            </div>
+
+            <div class="items__wrapper">
+                <select class="items__selector">
+                    <option value="def">По умолчанию</option>
+                    <option value="min">Цена по возрастанию</option>
+                    <option value="max">Цена по убыванию</option>
+                    <option value="name">По наименованию</option>
+                </select>
+
+                <div class="items" id="items">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
