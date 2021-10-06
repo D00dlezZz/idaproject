@@ -1,18 +1,18 @@
 const items = [
     {
-        image: '/dist/img/camera.svg', 
+        image: 'img/camera.svg', 
         title: 'Наименование товара',
         about: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк',
         price: '9 000'
     },
     {
-        image: '/dist/img/camera.svg', 
+        image: 'img/camera.svg', 
         title: 'Наименование товара',
         about: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк',
         price: '10 000'
     },
     {
-        image: '/dist/img/camera.svg', 
+        image: 'img/camera.svg', 
         title: 'Наименование товара',
         about: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк',
         price: '11 000'
@@ -24,13 +24,13 @@ const items = [
         price: '12 000'
     },
     {
-        image: '/dist/img/camera.svg', 
+        image: 'img/camera.svg', 
         title: 'Наименование товара',
         about: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк',
         price: '12 000'
     },
     {
-        image: '/dist/img/camera.svg', 
+        image: 'img/camera.svg', 
         title: 'Наименование товара',
         about: 'Довольно-таки интересное описание товара в несколько строк. Довольно-таки интересное описание товара в несколько строк',
         price: '12 000'
@@ -52,7 +52,7 @@ function itemsRender() {
         itemsContainer.innerHTML += `
             <div class="item animate-fadeIn">
                 <button class="item__delete">
-                    <img src="/dist/img/trash.svg">
+                    <img src="img/trash.svg">
                 </button>
                 <div class="item__img"><img src="${item.image}"/></div>
                 <div class="item__info">
